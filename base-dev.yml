@@ -1,6 +1,6 @@
 #定义端口 应用名称  数据库连接信息  jpa相关设置
 server:
-  port: 9001
+  port: 9222
 spring:
   application:
     name: tensquare-base #应用名称 不能有下划线
