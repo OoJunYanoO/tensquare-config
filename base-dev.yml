@@ -1,0 +1,23 @@
+#定义端口 应用名称  数据库连接信息  jpa相关设置
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-base #应用名称 不能有下划线
+  datasource:
+#    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.25.129:3306/tensquare_base?characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  output:
+    ansi:
+      enabled: ALWAYS
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true #设置自动建表（根据实体类建表）
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
